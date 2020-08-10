@@ -1,6 +1,4 @@
-html,
-body,
-#root {
+html, body, #root {
     font: 0.9rem sans-serif;
     background: #0a1f44;
     color: #1e2432;
@@ -9,7 +7,7 @@ body,
 }
 
 .main-container {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.418)), url('https://hdwallpaper20.com/wp-content/uploads/2017/07/wallpaper-wp4001752.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.418) ), url('https://hdwallpaper20.com/wp-content/uploads/2017/07/wallpaper-wp4001752.jpg');
     background-size: cover;
     background-position: center;
 }
