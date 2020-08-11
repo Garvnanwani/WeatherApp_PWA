@@ -36,7 +36,12 @@ const App = () => {
 
     return (
         <>
-            <input type="text" className="search" placeholder="Search..." value={query} onChange={(e) => setQuery(e.target.value)} onKeyPress={search} />
+            <div className="group">
+                <input autoComplete='off' type="text" required id="place" className="search" value={query} onChange={(e) => setQuery(e.target.value)} onKeyPress={search} />
+                <span className="highlight"></span>
+                <span className="bar"></span>
+                <label>Search for city</label>
+            </div>
             <div className="container">
                 {weather.main && (
                     <>
@@ -52,13 +57,13 @@ const App = () => {
                         <div className="info-side">
                             <div className="today-info-container">
                                 <div className="today-info">
-                                    <div className="precipitation"> <span className="title">FEELS LIKE</span><span className="value">{weather.main.feels_like}°C</span>
+                                    <div className="precipitation"> <span className="title">FEELS LIKE    </span><span className="value">{weather.main.feels_like}°C</span>
                                         <div className="clear"></div>
                                     </div>
-                                    <div className="humidity"> <span className="title">HUMIDITY</span><span className="value">{weather.main.humidity} %</span>
+                                    <div className="humidity"> <span className="title">HUMIDITY    </span><span className="value">{weather.main.humidity} %</span>
                                         <div className="clear"></div>
                                     </div>
-                                    <div className="wind"> <span className="title">WIND</span><span className="value">{weather.wind.speed} km/h</span>
+                                    <div className="wind"> <span className="title">WIND  </span><span className="value">{weather.wind.speed} km/h</span>
                                         <div className="clear"></div>
                                     </div>
                                 </div>
@@ -66,9 +71,6 @@ const App = () => {
                             <div className="week-container">
                                 <ul className="week-list">
                                     <li className="active"><i className="day-icon" data-feather="sun"></i><span className="day-name">{weekday[d.getDay()]}</span><span className="day-temp">29°C</span></li>
-                                    <li><i className="day-icon" data-feather="cloud"></i><span className="day-name">{weekday[d.getDay() + 1]}</span><span className="day-temp">21°C</span></li>
-                                    <li><i className="day-icon" data-feather="cloud-snow"></i><span className="day-name">{weekday[d.getDay() + 2]}</span><span className="day-temp">08°C</span></li>
-                                    <li><i className="day-icon" data-feather="cloud-rain"></i><span className="day-name">{weekday[d.getDay() + 3]}</span><span className="day-temp">19°C</span></li>
                                     <div className="clear"></div>
                                 </ul>
                             </div>
