@@ -69,7 +69,7 @@ const App = () => {
                                     <div className="wind"> <span className="title">WIND - </span><span className="value">{weather.wind.speed} km/h</span>
                                         <div className="clear"></div>
                                     </div>
-                                    <div className="pressure"> <span className="title">PRESSURE - </span><span className="value">{weather.main.pressure} km/h</span>
+                                    <div className="pressure"> <span className="title">PRESSURE - </span><span className="value">{weather.main.pressure} mbar</span>
                                         <div className="clear"></div>
                                     </div>
                                 </div>
