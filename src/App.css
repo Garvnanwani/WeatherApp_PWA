@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap');
 
-:root {
-    --gradient: linear-gradient(135deg, #72EDF2 10%, #5151E5 100%);
-}
-
 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -70,7 +66,7 @@ input:focus~label,
 input:valid~label {
     top: -20px;
     font-size: 14px;
-    color: #5264AE;
+    color: #59b6b9;
 }
 
 /* BOTTOM BARS ================================= */
@@ -87,7 +83,7 @@ input:valid~label {
     width: 0;
     bottom: 1px;
     position: absolute;
-    background: #5264AE;
+    background: #59b6b9;
     transition: 0.2s ease all;
     -moz-transition: 0.2s ease all;
     -webkit-transition: 0.2s ease all;
@@ -166,29 +162,17 @@ input:focus~.highlight {
     background-color: #222831;
     color: #ffffff;
     height: 400px;
+    cursor: pointer;
 }
 
 .weather-side {
     position: relative;
     height: 100%;
     border-radius: 25px;
-    background-image: url("https://images.unsplash.com/photo-1559963110-71b394e7494d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80");
     width: 300px;
     -webkit-box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.2);
-    -webkit-transition: -webkit-transform 300ms ease;
-    transition: -webkit-transform 300ms ease;
-    -o-transition: transform 300ms ease;
-    transition: transform 300ms ease;
-    transition: transform 300ms ease, -webkit-transform 300ms ease;
-    -webkit-transform: translateZ(0) scale(1.02) perspective(1000px);
-    transform: translateZ(0) scale(1.02) perspective(1000px);
     float: left;
-}
-
-.weather-side:hover {
-    -webkit-transform: scale(1.1) perspective(1500px) rotateY(10deg);
-    transform: scale(1.1) perspective(1500px) rotateY(10deg);
 }
 
 .weather-gradient {
@@ -197,9 +181,13 @@ input:focus~.highlight {
     height: 100%;
     top: 0;
     left: 0;
-    background-image: var(--gradient);
+    background: #59b6b9;
     border-radius: 25px;
     opacity: 0.8;
+}
+
+.info {
+    margin: 14px;
 }
 
 .date-container {
@@ -344,7 +332,7 @@ input:focus~.highlight {
     border-radius: 25px;
     padding: 10px;
     font-family: 'Montserrat', sans-serif;
-    background-image: var(--gradient);
+    background: #59b6b9;
     color: #ffffff;
     font-weight: 700;
     -webkit-box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.25);

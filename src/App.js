@@ -50,6 +50,9 @@ const App = () => {
                             <div className="date-container">
                                 <h2 className="date-dayname">{weekday[d.getDay()]}</h2><span className="date-day">{date}</span><i className="location-icon" data-feather="map-pin"></i><span className="location">{weather.name}, {weather.sys.country}</span></div>
                             <div className="weather-container"><i className="weather-icon" data-feather="sun"></i>
+                                <div className="info">
+                                    <img className="city-icon" src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} alt={weather.weather[0].description} />
+                                </div>
                                 <h1 className="weather-temp">{weather.main.temp}°C</h1>
                                 <h3 className="weather-desc">{weather.weather[0].description}</h3>
                             </div>
@@ -66,11 +69,16 @@ const App = () => {
                                     <div className="wind"> <span className="title">WIND - </span><span className="value">{weather.wind.speed} km/h</span>
                                         <div className="clear"></div>
                                     </div>
+                                    <div className="pressure"> <span className="title">PRESSURE - </span><span className="value">{weather.main.pressure} km/h</span>
+                                        <div className="clear"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </>
                 )}
+
+
             </div>
         </>
 
