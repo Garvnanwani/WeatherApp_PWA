@@ -40,7 +40,7 @@ const App = () => {
                 <input autoComplete='off' type="text" required id="place" className="search" value={query} onChange={(e) => setQuery(e.target.value)} onKeyPress={search} />
                 <span className="highlight"></span>
                 <span className="bar"></span>
-                <label>Search for city</label>
+                <label>Search for any city</label>
             </div>
             <div className="container">
                 {weather.main && (
