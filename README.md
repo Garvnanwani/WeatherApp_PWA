@@ -4,7 +4,7 @@
 
 This is a simple, clean and beautiful Progressive Web App which you can install on your Android, iPhone or Desktop. 
 
-(Demo of app)[demo/pwa.png]
+![Demo of app](demo/pwa.png)
 
 ## Tech Used
 * Create React App
